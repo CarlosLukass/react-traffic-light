@@ -13,10 +13,6 @@ const TrafficLight = () => {
 	// styles state
 	const styles = {
 		default: `m-2 p-4 border rounded-circle`,
-		red: 'red',
-		yellow: 'yellow',
-		green: 'green',
-		purple: 'purple'
 	}
 
 	const handleParty = () => {
@@ -56,6 +52,7 @@ const TrafficLight = () => {
 
 	const handleSelector = (e) => {
 		setCurrentLight(e.target.name)
+		setPurpleIsShowing(false)
 
 
 	}
